@@ -31,13 +31,14 @@ body{
   }
   #title_inner_container{
     width: 100%;
-    height: 160%;
-  	background-repeat: no-repeat;
- 	background-size: 100% 100%;
+    height: 100%;
+  
     display: flex;
     justify-content: center;
     align-items: center;
-  	background-image: url("images/chat_room_banner.png");
+  
+    /* background-color: #083D77; */
+    border-radius: 200px;
   }
   #title{
     display: inline-block;
@@ -50,14 +51,11 @@ body{
   #join_container{
     width: 100%;
     height: 200px;
-  
     display: flex;
-    justify-content: center;
     align-items: center;
-  
     float: left;
     margin-top: 80px;
-	background-color: #7bacff;
+	  background-color: #7bacff;
 
   
   }
@@ -208,7 +206,8 @@ body{
     color: #1D3354;
   }
   .message_user_container{
-    width: 100%;
+    width: 50%;
+    height: auto;
     display: inline-block;
   }
   .message_user{
@@ -217,7 +216,8 @@ body{
     font-size: 14px;
   }
   .message_content_container{
-    width: 100%;
+    width: 50%;
+    height: auto;
     display: inline-block;
   
     white-space: pre-wrap;
@@ -229,6 +229,26 @@ body{
     margin-top: 5px;
   }
   
+
+.cmessage_user {
+    background-color:#00c9ff;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  .cmessage_content_container{
+    width: 50%;
+    height: auto;
+    display: inline-block;
+    float: right;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  .cmessage_content{
+    font-weight: normal;
+    font-size: 14px;
+    margin-top: 5px;
+    float: right;
+  }
   .enabled{
     transition: background-color 0.5s;
     color: #fff;
